@@ -1,1 +1,1 @@
-website created using sas ( mixins, includes, ...)
+website created using sass ( mixins, includes, ...)
