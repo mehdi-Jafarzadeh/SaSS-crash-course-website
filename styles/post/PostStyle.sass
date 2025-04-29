@@ -1,0 +1,44 @@
+@import ../global/style
+
+// @mixin text($color:white)
+//     color: $color
+//     font-weight: bolder
+//     font-size: 1rem
+
+// @mixin mx1
+//     @include text
+//     background: gray
+    
+
+#postsPage
+    display: flex
+    justify-content: space-around
+.post
+    background: $theme-color
+    width: 400px
+    border-radius: 10px
+    text-align: center
+    padding: 1rem
+    h1
+        margin: 1rem 0
+        color: white
+        // @include mx1
+    div
+        // @include text(green)
+        padding: 1rem
+        background: white
+        border-radius: 10px
+        margin-bottom: 1rem
+    &:nth-child(2)
+        background: white
+        border: 3px solid $theme-color
+        h1
+            color: $theme-color
+            // @include text(black)
+        div
+            border: 3px solid $theme-color
+
+.bigPost
+    @extend .post
+    margin: 1rem auto
+    width: 800px
